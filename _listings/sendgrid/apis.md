@@ -1,16 +1,14 @@
 ---
 name: SendGrid
 x-slug: sendgrid
-description: SendGrid is a cloud-based email service that delivers email on behalf
-  of companies to increase deliverability and improve customer communications integration
-  with new or existing email systems is done via SMTP or through a REST API, providing
-  metrics on outgoing email, and handles unsubscribe links, abiding by anti-spam regulations.
-image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/sendgrid-logo.png
+description: Delivering your transactional and marketing emails through the worlds
+  largest cloud-based email delivery platform. Send with confidence.
+image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/142-sendgrid.jpg
 x-kinRank: "9"
-x-alexaRank: ""
+x-alexaRank: "9582"
 tags: Teammates
-created: "2018-05-20"
-modified: "2018-05-20"
+created: "2018-06-20"
+modified: "2018-06-20"
 url: https://raw.githubusercontent.com/streamdata-gallery-topics/teammates/master/_listings/sendgrid/apis.md
 specificationVersion: "0.14"
 apis:
@@ -22,8 +20,8 @@ apis:
     **Note:** The Response Header will include pagination info. For example:
 
     link: ```<https://api.sendgrid.com/v3/teammates?limit=10&offset=0>; rel="first"; title="1", <https://api.sendgrid.com/v3/teammates?limit=10&offset=10>; rel="last"; title="2", <https://api.sendgrid.com/v3/teammates?limit=10&offset=0>; rel="prev"; title="1"```
-  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/sendgrid-logo.png
-  humanURL: https://sendgrid.com/
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/142-sendgrid.jpg
+  humanURL: http://sendgrid.com
   baseURL: https://api.sendgrid.com//v3//teammates
   tags: Email,Teammates
   properties:
@@ -39,8 +37,8 @@ apis:
     **Note:** A teammate invite will expire after 7 days, but you may resend the invite at any time to reset the expiration date.
 
     Essentials, [Legacy Lite](https://sendgrid.com/docs/Classroom/Basics/Billing/legacy_lite_plan.html), and Free Trial users may create up to one teammate per account. There are no limits for how many teammates a Pro or higher account may create.
-  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/sendgrid-logo.png
-  humanURL: https://sendgrid.com/
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/142-sendgrid.jpg
+  humanURL: http://sendgrid.com
   baseURL: https://api.sendgrid.com//v3//teammates
   tags: Email,Teammates
   properties:
@@ -52,8 +50,8 @@ apis:
     This endpoint allows you to retrieve a list of all pending teammate invitations.
 
     **Note:** Each teammate invitation is valid for 7 days. Users may resend the invite to refresh the expiration date.
-  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/sendgrid-logo.png
-  humanURL: https://sendgrid.com/
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/142-sendgrid.jpg
+  humanURL: http://sendgrid.com
   baseURL: https://api.sendgrid.com//v3//teammates/pending
   tags: Email,Teammates, Pending
   properties:
@@ -62,8 +60,8 @@ apis:
 - name: SendGrid Delete Teammates Pending Token
   x-api-slug: sendgrid
   description: This endpoint allows you to delete a pending teammate invite.
-  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/sendgrid-logo.png
-  humanURL: https://sendgrid.com/
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/142-sendgrid.jpg
+  humanURL: http://sendgrid.com
   baseURL: https://api.sendgrid.com//v3//teammates/pending/{token}
   tags: Email,Teammates, Pending, Token
   properties:
@@ -75,8 +73,8 @@ apis:
     This endpoint allows you to resend a teammate invite.
 
     **Note:** Teammate invitations will expire after 7 days. Resending an invite will reset the expiration date.
-  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/sendgrid-logo.png
-  humanURL: https://sendgrid.com/
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/142-sendgrid.jpg
+  humanURL: http://sendgrid.com
   baseURL: https://api.sendgrid.com//v3//teammates/pending/{token}/resend
   tags: Email,Teammates, Pending, Token, Resend
   properties:
@@ -88,8 +86,8 @@ apis:
     This endpoint allows you to delete a teammate.
 
     **Only the parent user or an admin teammate can delete another teammate.**
-  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/sendgrid-logo.png
-  humanURL: https://sendgrid.com/
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/142-sendgrid.jpg
+  humanURL: http://sendgrid.com
   baseURL: https://api.sendgrid.com//v3//teammates/{username}
   tags: Email,Teammates, Username
   properties:
@@ -98,8 +96,8 @@ apis:
 - name: SendGrid Get Teammates Username
   x-api-slug: sendgrid
   description: This endpoint allows you to retrieve a specific teammate by username.
-  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/sendgrid-logo.png
-  humanURL: https://sendgrid.com/
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/142-sendgrid.jpg
+  humanURL: http://sendgrid.com
   baseURL: https://api.sendgrid.com//v3//teammates/{username}
   tags: Email,Teammates, Username
   properties:
@@ -113,8 +111,8 @@ apis:
     a teammate should have.\n\n**Only the parent user or other admin teammates can
     update another teammate\u2019s permissions.**\n\n**Admin users can only update
     permissions.**"
-  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/sendgrid-logo.png
-  humanURL: https://sendgrid.com/
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/142-sendgrid.jpg
+  humanURL: http://sendgrid.com
   baseURL: https://api.sendgrid.com//v3//teammates/{username}
   tags: Email,Teammates, Username
   properties:
@@ -126,15 +124,15 @@ apis:
     cost and complexity of maintaining custom email systems. SendGrid provides reliable
     delivery, scalability and real-time analytics along with flexible APIs that make
     custom integration a breeze.
-  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/sendgrid-logo.png
-  humanURL: https://sendgrid.com/
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/142-sendgrid.jpg
+  humanURL: http://sendgrid.com
   baseURL: https://api.sendgrid.com//v3
   tags: Teammates
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/teammates/master/_listings/sendgrid/openapi.md
 x-common:
-- type: x-net-library
+- type: x--net-library
   url: https://sendgrid.com/docs/Code_Examples/csharp.html
 - type: x-base
   url: https://api.sendgrid.com
@@ -146,10 +144,18 @@ x-common:
   url: https://sendgrid.com/contact
 - type: x-crunchbase
   url: http://www.crunchbase.com/company/sendgrid
+- type: x-crunchbase
+  url: https://crunchbase.com/organization/sendgrid
 - type: x-developer
   url: https://sendgrid.com/developers
 - type: x-documentation
   url: https://sendgrid.com/docs/index.html
+- type: x-email
+  url: privacy@sendgrid.com
+- type: x-email
+  url: legal@sendgrid.com
+- type: x-email
+  url: dpo@sendgrid.com
 - type: x-forum
   url: http://support.sendgrid.com/forums
 - type: x-github
@@ -162,7 +168,7 @@ x-common:
   url: https://sendgrid.com/docs/Code_Examples/java.html
 - type: x-labs
   url: http://labs.sendgrid.com/
-- type: x-nodejs-library
+- type: x-node-js-library
   url: https://sendgrid.com/docs/Code_Examples/nodejs.html
 - type: x-partners
   url: https://sendgrid.com/partners
@@ -186,6 +192,8 @@ x-common:
   url: https://sendgrid.com/tos
 - type: x-twitter
   url: https://twitter.com/SendGrid
+- type: x-website
+  url: http://sendgrid.com
 - type: x-website
   url: https://sendgrid.com/
 include: []

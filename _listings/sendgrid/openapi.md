@@ -4,7 +4,7 @@ x-collection-name: SendGrid
 x-complete: 1
 info:
   title: SendGrid
-  description: the-sendgrid-web-api-v3-documentation-this-is-the-entirety-of-the-documented-v3-endpoints-we-have-updated-all-the-descriptions-parameters-requests-and-responses-authentication-every-endpoint-requires-authentication-in-the-form-of-an-authorization-header-authorization-bearer-api-key
+  description: the-sendgrid-web-api-v3-documentation--this-is-the-entirety-of-the-documented-v3-endpoints--we-have-updated-all-the-descriptions-parameters-requests-and-responses--authentication-every-endpoint-requires-authentication-in-the-form-of-an-authorization-header-authorization-bearer-api-key
   version: 1.0.0
 host: api.sendgrid.com
 basePath: /v3
