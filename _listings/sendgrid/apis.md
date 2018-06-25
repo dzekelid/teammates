@@ -5,10 +5,10 @@ description: Delivering your transactional and marketing emails through the worl
   largest cloud-based email delivery platform. Send with confidence.
 image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/142-sendgrid.jpg
 x-kinRank: "9"
-x-alexaRank: "9582"
+x-alexaRank: "10000"
 tags: Teammates
-created: "2018-06-20"
-modified: "2018-06-20"
+created: "2018-06-25"
+modified: "2018-06-25"
 url: https://raw.githubusercontent.com/streamdata-gallery-topics/teammates/master/_listings/sendgrid/apis.md
 specificationVersion: "0.14"
 apis:
@@ -168,6 +168,8 @@ x-common:
   url: https://sendgrid.com/docs/Code_Examples/java.html
 - type: x-labs
   url: http://labs.sendgrid.com/
+- type: x-linkedin
+  url: https://www.linkedin.com/company/sendgrid
 - type: x-node-js-library
   url: https://sendgrid.com/docs/Code_Examples/nodejs.html
 - type: x-partners
