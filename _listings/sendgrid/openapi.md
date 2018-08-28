@@ -1,10 +1,8 @@
----
 swagger: "2.0"
 x-collection-name: SendGrid
 x-complete: 1
 info:
   title: SendGrid
-  description: the-sendgrid-web-api-v3-documentation--this-is-the-entirety-of-the-documented-v3-endpoints--we-have-updated-all-the-descriptions-parameters-requests-and-responses--authentication-every-endpoint-requires-authentication-in-the-form-of-an-authorization-header-authorization-bearer-api-key
   version: 1.0.0
 host: api.sendgrid.com
 basePath: /v3
@@ -138,12 +136,14 @@ paths:
       - Username
     patch:
       summary: Patch Teammates Username
-      description: "This endpoint allows you to update a teammate\u2019s permissions.\n\nTo
-        turn a teammate into an admin, the request body should contain an `is_admin`
-        set to `true`. Otherwise, set `is_admin` to `false` and pass in all the scopes
-        that a teammate should have.\n\n**Only the parent user or other admin teammates
-        can update another teammate\u2019s permissions.**\n\n**Admin users can only
-        update permissions.**"
+      description: |-
+        This endpoint allows you to update a teammate???s permissions.
+
+        To turn a teammate into an admin, the request body should contain an `is_admin` set to `true`. Otherwise, set `is_admin` to `false` and pass in all the scopes that a teammate should have.
+
+        **Only the parent user or other admin teammates can update another teammate???s permissions.**
+
+        **Admin users can only update permissions.**
       operationId: teammates.username.patch
       x-api-path-slug: teammatesusername-patch
       parameters:
@@ -158,4 +158,3 @@ paths:
       - Email
       - Teammates
       - Username
----

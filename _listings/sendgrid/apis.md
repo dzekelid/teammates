@@ -7,13 +7,13 @@ image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/142-sendgr
 x-kinRank: "9"
 x-alexaRank: "10000"
 tags: Teammates
-created: "2018-06-25"
-modified: "2018-06-25"
+created: "2018-08-28"
+modified: "2018-08-28"
 url: https://raw.githubusercontent.com/streamdata-gallery-topics/teammates/master/_listings/sendgrid/apis.md
 specificationVersion: "0.14"
 apis:
-- name: SendGrid Get Teammates
-  x-api-slug: sendgrid
+- name: SendGrid - Get Teammates
+  x-api-slug: teammates-get
   description: |-
     This endpoint allows you to retrieve a list of all current teammates.
 
@@ -22,15 +22,16 @@ apis:
     link: ```<https://api.sendgrid.com/v3/teammates?limit=10&offset=0>; rel="first"; title="1", <https://api.sendgrid.com/v3/teammates?limit=10&offset=10>; rel="last"; title="2", <https://api.sendgrid.com/v3/teammates?limit=10&offset=0>; rel="prev"; title="1"```
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/142-sendgrid.jpg
   humanURL: http://sendgrid.com
-  baseURL: https://api.sendgrid.com//v3//teammates
-  tags: Email,Teammates
+  baseURL: https://api.sendgrid.com//v3
+  tags: API LIfeyclessss, Imports, Stack Network, Stack, Technology, SaaS, Emails,
+    Emails, Messages, Messages, Relative Data, Service API, Relative StreamRank, Streams
   properties:
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/teammates/master/_listings/sendgrid/teammates-get-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/teammates/master/_listings/sendgrid/teammates-get-openapi.md
-- name: SendGrid Add Teammates
-  x-api-slug: sendgrid
+- name: SendGrid - Add Teammates
+  x-api-slug: teammates-post
   description: |-
     This endpoint allows you to send a teammate invitation via email with a predefined set of scopes, or permissions.
 
@@ -39,101 +40,101 @@ apis:
     Essentials, [Legacy Lite](https://sendgrid.com/docs/Classroom/Basics/Billing/legacy_lite_plan.html), and Free Trial users may create up to one teammate per account. There are no limits for how many teammates a Pro or higher account may create.
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/142-sendgrid.jpg
   humanURL: http://sendgrid.com
-  baseURL: https://api.sendgrid.com//v3//teammates
-  tags: Email,Teammates
+  baseURL: https://api.sendgrid.com//v3
+  tags: API LIfeyclessss, Imports, Stack Network, Stack, Technology, SaaS, Emails,
+    Emails, Messages, Messages, Relative Data, Service API, Relative StreamRank, Streams
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/teammates/master/_listings/sendgrid/teammates-post-openapi.md
-- name: SendGrid Get Teammates Pending
-  x-api-slug: sendgrid
+- name: SendGrid - Get Teammates Pending
+  x-api-slug: teammatespending-get
   description: |-
     This endpoint allows you to retrieve a list of all pending teammate invitations.
 
     **Note:** Each teammate invitation is valid for 7 days. Users may resend the invite to refresh the expiration date.
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/142-sendgrid.jpg
   humanURL: http://sendgrid.com
-  baseURL: https://api.sendgrid.com//v3//teammates/pending
-  tags: Email,Teammates, Pending
+  baseURL: https://api.sendgrid.com//v3
+  tags: API LIfeyclessss, Imports, Stack Network, Stack, Technology, SaaS, Emails,
+    Emails, Messages, Messages, Relative Data, Service API, Relative StreamRank, Streams
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/teammates/master/_listings/sendgrid/teammatespending-get-openapi.md
-- name: SendGrid Delete Teammates Pending Token
-  x-api-slug: sendgrid
+- name: SendGrid - Delete Teammates Pending Token
+  x-api-slug: teammatespendingtoken-delete
   description: This endpoint allows you to delete a pending teammate invite.
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/142-sendgrid.jpg
   humanURL: http://sendgrid.com
-  baseURL: https://api.sendgrid.com//v3//teammates/pending/{token}
-  tags: Email,Teammates, Pending, Token
+  baseURL: https://api.sendgrid.com//v3
+  tags: API LIfeyclessss, Imports, Stack Network, Stack, Technology, SaaS, Emails,
+    Emails, Messages, Messages, Relative Data, Service API, Relative StreamRank, Streams
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/teammates/master/_listings/sendgrid/teammatespendingtoken-delete-openapi.md
-- name: SendGrid Add Teammates Pending Token Resend
-  x-api-slug: sendgrid
+- name: SendGrid - Add Teammates Pending Token Resend
+  x-api-slug: teammatespendingtokenresend-post
   description: |-
     This endpoint allows you to resend a teammate invite.
 
     **Note:** Teammate invitations will expire after 7 days. Resending an invite will reset the expiration date.
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/142-sendgrid.jpg
   humanURL: http://sendgrid.com
-  baseURL: https://api.sendgrid.com//v3//teammates/pending/{token}/resend
-  tags: Email,Teammates, Pending, Token, Resend
+  baseURL: https://api.sendgrid.com//v3
+  tags: API LIfeyclessss, Imports, Stack Network, Stack, Technology, SaaS, Emails,
+    Emails, Messages, Messages, Relative Data, Service API, Relative StreamRank, Streams
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/teammates/master/_listings/sendgrid/teammatespendingtokenresend-post-openapi.md
-- name: SendGrid Delete Teammates Username
-  x-api-slug: sendgrid
+- name: SendGrid - Delete Teammates Username
+  x-api-slug: teammatesusername-delete
   description: |-
     This endpoint allows you to delete a teammate.
 
     **Only the parent user or an admin teammate can delete another teammate.**
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/142-sendgrid.jpg
   humanURL: http://sendgrid.com
-  baseURL: https://api.sendgrid.com//v3//teammates/{username}
-  tags: Email,Teammates, Username
+  baseURL: https://api.sendgrid.com//v3
+  tags: API LIfeyclessss, Imports, Stack Network, Stack, Technology, SaaS, Emails,
+    Emails, Messages, Messages, Relative Data, Service API, Relative StreamRank, Streams
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/teammates/master/_listings/sendgrid/teammatesusername-delete-openapi.md
-- name: SendGrid Get Teammates Username
-  x-api-slug: sendgrid
+- name: SendGrid - Get Teammates Username
+  x-api-slug: teammatesusername-get
   description: This endpoint allows you to retrieve a specific teammate by username.
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/142-sendgrid.jpg
   humanURL: http://sendgrid.com
-  baseURL: https://api.sendgrid.com//v3//teammates/{username}
-  tags: Email,Teammates, Username
+  baseURL: https://api.sendgrid.com//v3
+  tags: API LIfeyclessss, Imports, Stack Network, Stack, Technology, SaaS, Emails,
+    Emails, Messages, Messages, Relative Data, Service API, Relative StreamRank, Streams
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/teammates/master/_listings/sendgrid/teammatesusername-get-openapi.md
-- name: SendGrid Patch Teammates Username
-  x-api-slug: sendgrid
-  description: "This endpoint allows you to update a teammate\u2019s permissions.\n\nTo
-    turn a teammate into an admin, the request body should contain an `is_admin` set
-    to `true`. Otherwise, set `is_admin` to `false` and pass in all the scopes that
-    a teammate should have.\n\n**Only the parent user or other admin teammates can
-    update another teammate\u2019s permissions.**\n\n**Admin users can only update
-    permissions.**"
-  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/142-sendgrid.jpg
-  humanURL: http://sendgrid.com
-  baseURL: https://api.sendgrid.com//v3//teammates/{username}
-  tags: Email,Teammates, Username
-  properties:
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/teammates/master/_listings/sendgrid/teammatesusername-patch-openapi.md
-- name: SendGrid
-  x-api-slug: sendgrid
-  description: SendGrids cloud-based email infrastructure relieves businesses of the
-    cost and complexity of maintaining custom email systems. SendGrid provides reliable
-    delivery, scalability and real-time analytics along with flexible APIs that make
-    custom integration a breeze.
+- name: SendGrid - Patch Teammates Username
+  x-api-slug: teammatesusername-patch
+  description: |-
+    This endpoint allows you to update a teammate???s permissions.
+
+    To turn a teammate into an admin, the request body should contain an `is_admin` set to `true`. Otherwise, set `is_admin` to `false` and pass in all the scopes that a teammate should have.
+
+    **Only the parent user or other admin teammates can update another teammate???s permissions.**
+
+    **Admin users can only update permissions.**
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/142-sendgrid.jpg
   humanURL: http://sendgrid.com
   baseURL: https://api.sendgrid.com//v3
-  tags: Teammates
+  tags: API LIfeyclessss, Imports, Stack Network, Stack, Technology, SaaS, Emails,
+    Emails, Messages, Messages, Relative Data, Service API, Relative StreamRank, Streams
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/teammates/master/_listings/sendgrid/openapi.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/teammates/master/_listings/sendgrid/teammatesusername-patch-openapi.md
 x-common:
 - type: x--net-library
   url: https://sendgrid.com/docs/Code_Examples/csharp.html
+- type: x-api-gallery
+  url: http://school.digger.api.gallery.streamdata.io
+- type: x-api-stack
+  url: http://sendgrid.stack.network
 - type: x-base
   url: https://api.sendgrid.com
 - type: x-blog

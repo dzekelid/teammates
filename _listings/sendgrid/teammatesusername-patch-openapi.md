@@ -4,12 +4,14 @@ x-collection-name: SendGrid
 x-complete: 0
 info:
   title: SendGrid Patch Teammates Username
-  description: "This endpoint allows you to update a teammate\u2019s permissions.\n\nTo
-    turn a teammate into an admin, the request body should contain an `is_admin` set
-    to `true`. Otherwise, set `is_admin` to `false` and pass in all the scopes that
-    a teammate should have.\n\n**Only the parent user or other admin teammates can
-    update another teammate\u2019s permissions.**\n\n**Admin users can only update
-    permissions.**"
+  description: |-
+    This endpoint allows you to update a teammate???s permissions.
+
+    To turn a teammate into an admin, the request body should contain an `is_admin` set to `true`. Otherwise, set `is_admin` to `false` and pass in all the scopes that a teammate should have.
+
+    **Only the parent user or other admin teammates can update another teammate???s permissions.**
+
+    **Admin users can only update permissions.**
   version: 1.0.0
 host: api.sendgrid.com
 basePath: /v3
@@ -143,12 +145,14 @@ paths:
       - Username
     patch:
       summary: Patch Teammates Username
-      description: "This endpoint allows you to update a teammate\u2019s permissions.\n\nTo
-        turn a teammate into an admin, the request body should contain an `is_admin`
-        set to `true`. Otherwise, set `is_admin` to `false` and pass in all the scopes
-        that a teammate should have.\n\n**Only the parent user or other admin teammates
-        can update another teammate\u2019s permissions.**\n\n**Admin users can only
-        update permissions.**"
+      description: |-
+        This endpoint allows you to update a teammate???s permissions.
+
+        To turn a teammate into an admin, the request body should contain an `is_admin` set to `true`. Otherwise, set `is_admin` to `false` and pass in all the scopes that a teammate should have.
+
+        **Only the parent user or other admin teammates can update another teammate???s permissions.**
+
+        **Admin users can only update permissions.**
       operationId: teammates.username.patch
       x-api-path-slug: teammatesusername-patch
       parameters:
